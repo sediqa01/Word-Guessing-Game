@@ -16,3 +16,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.game-area {
+    width: 230px;
+    background: #fff;
+    border-radius: 5px;
+}

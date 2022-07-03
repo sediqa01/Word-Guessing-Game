@@ -28,3 +28,13 @@ body {
     padding: 20px 25px;
     border-bottom: 1px solid #ccc;
 }
+.game-area .game-content{
+    margin: 25px 25px 35px;
+
+}
+.game-content .game-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}

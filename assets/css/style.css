@@ -57,3 +57,10 @@ body {
 .game-inputs input:first-child{
     margin-left: 0px;
 }
+ .game-details {
+    margin: 15px  20px;
+}
+.game-details p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}

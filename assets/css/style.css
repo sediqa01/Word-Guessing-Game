@@ -43,7 +43,7 @@ body {
     justify-content: center;
 }
 
-.game-inputs input{
+.game-inputs input {
     width: 40px;
     height: 40px;
     margin: 4px;
@@ -52,28 +52,33 @@ body {
     text-align: center;
     background: none;
     border-radius: 5px;
-    border: 1px solid #ccc;;
+    border: 1px solid #ccc;
+    ;
 }
-.game-inputs input:first-child{
+
+.game-inputs input:first-child {
     margin-left: 0px;
 }
- .game-details {
-    margin: 15px  20px;
+
+.game-details {
+    margin: 15px 20px;
 }
+
 .game-details p {
     font-size: 19px;
     margin-bottom: 10px;
 }
- .btn {
+
+.btn {
     width: 100%;
     font-size: 18px;
     font-weight: 600;
-    cursor:pointer;
+    cursor: pointer;
     color: #ffffffff;
-    padding: 15px 0 ;
+    padding: 15px 0;
     margin: 15px 0;
     border: none;
     outline: none;
-    background: #4d1cc0 ;
+    background: #4d1cc0;
     border-radius: 5px;
 }

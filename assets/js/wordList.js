@@ -1,5 +1,5 @@
 const wordDetails = [
-  
+
     {
         word: "google",
         hint: "search engin"

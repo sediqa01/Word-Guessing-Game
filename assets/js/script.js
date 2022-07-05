@@ -1,4 +1,5 @@
 const inputs = document.querySelector(".game-inputs");
+  resetBtn = document.querySelector(".btn");
 
 function randomWords() {
     //getting random object from wordList
@@ -15,3 +16,5 @@ function randomWords() {
     inputs.innerHTML = html;
 }
 randomWords();
+
+resetBtn.addEventListener("click" , randomWords);

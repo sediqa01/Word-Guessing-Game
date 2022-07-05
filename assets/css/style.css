@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/pexels-skitterphoto-695571.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/pexels-gradienta-7130472.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,11 +69,11 @@ body {
     font-size: 18px;
     font-weight: 600;
     cursor:pointer;
-    color: #000 ;
+    color: #ffffffff;
     padding: 15px 0 ;
     margin: 15px 0;
     border: none;
     outline: none;
-    background: #fff ;
+    background: #4d1cc0 ;
     border-radius: 5px;
 }

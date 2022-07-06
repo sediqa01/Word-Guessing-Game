@@ -44,7 +44,7 @@ function initGame(e) { //Geeting user pressed key
 
         //showing matched letter in the input value
         if (word[i] === key) {
-          corrects.push(key);
+         corrects.push(key);
           inputs.querySelectorAll("input")[i].value = key;
         }
       }
@@ -58,13 +58,23 @@ function initGame(e) { //Geeting user pressed key
   }
       typingInput.value = "";
 
-    if (maxGuesses < 1) { // 
+
+      setTimeout(() => {
+
+    if (corrects.length === word.length) { // if user found all letters
+      alert(`Congrast!! You found the word ${word.toUpperCase()}`);
+
+      randomWords(); // calling randomWords func , so game reset
+    }
+    else if (maxGuesses < 1) { // if user could'nt found all letters
       alert("Game Over!!");
+
       for (let i = 0; i < word.length; i++) {
         //showing matched letter
           inputs.querySelectorAll("input")[i].value = word[i];
         }
       }
+    });
 }
 
 

@@ -45,7 +45,7 @@ function initGame(e) { //Geeting user pressed key
     } 
     else {
 
-      incorrects.push(key);
+      incorrects.push(`  ${key}`);
     }
   }
   wrongLetters.innerText = incorrects;

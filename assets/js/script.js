@@ -4,7 +4,7 @@ const inputs = document.querySelector(".game-inputs"),
   wrongLetters = document.querySelector(".wrong span"),
   typingInput = document.querySelector(".typing");
 
-let word, incorrects = [];
+let word, corrects = [] , incorrects = [];
 
 function randomWords() {
 
@@ -30,8 +30,9 @@ function initGame(e) { //Geeting user pressed key
 
   let key = e.target.value;
 
-  if (key.match(/^[A-Za-z]+$/)) {
-    console.log(key);
+  if (key.match(/^[A-Za-z]+$/) && !incorrects.includes(`  ${key}`) && !corrects.includes(key)) {
+      
+     console.log(key);
 
     if(word.includes(key)){ //if user letter found in the word
 
@@ -39,6 +40,7 @@ function initGame(e) { //Geeting user pressed key
 
         //showing matched letter in the input value
         if (word[i] === key) {
+          corrects.push(key);
           inputs.querySelectorAll("input")[i].value = key;
         }
       }

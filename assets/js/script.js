@@ -47,7 +47,7 @@ function initGame(e) { //Geeting user pressed key
       console.log("Letter no found!");
     }
   }
-
+      typingInput.value = "";
 }
 
 resetBtn.addEventListener("click", randomWords);

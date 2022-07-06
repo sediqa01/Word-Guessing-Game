@@ -52,6 +52,7 @@ body {
     text-align: center;
     background: none;
     border-radius: 5px;
+    text-transform: uppercase;
     border: 1px solid #ccc;
     ;
 }

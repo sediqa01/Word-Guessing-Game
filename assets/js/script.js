@@ -13,11 +13,12 @@ function randomWords() {
   let objFirst = wordDetails[Math.floor(Math.random() * wordDetails.length)];
 
   word = objFirst.word; //getting word from random object
-  maxGuesses = 6;
+  maxGuesses = 6; corrects = []; incorrects = [];
   console.log(word);
 
   hint.innerHTML = objFirst.hint;
   guessLeft.innerHTML = maxGuesses;
+  wrongLetters.innerText = incorrects;
 
   let html = "";
   for (let i = 0; i < word.length; i++) {
@@ -56,7 +57,16 @@ function initGame(e) { //Geeting user pressed key
     wrongLetters.innerText = incorrects;
   }
       typingInput.value = "";
+
+    if (maxGuesses < 1) { // 
+      alert("Game Over!!");
+      for (let i = 0; i < word.length; i++) {
+        //showing matched letter
+          inputs.querySelectorAll("input")[i].value = word[i];
+        }
+      }
 }
+
 
 resetBtn.addEventListener("click", randomWords);
 typingInput.addEventListener("input", initGame);

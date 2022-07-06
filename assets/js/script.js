@@ -1,9 +1,10 @@
 const inputs = document.querySelector(".game-inputs"),
   resetBtn = document.querySelector(".btn"),
   hint = document.querySelector(".hint span"),
+  wrongLetters = document.querySelector(".wrong span"),
   typingInput = document.querySelector(".typing");
 
-let word;
+let word, incorrects = [];
 
 function randomWords() {
 
@@ -44,9 +45,10 @@ function initGame(e) { //Geeting user pressed key
     } 
     else {
 
-      console.log("Letter no found!");
+      incorrects.push(key);
     }
   }
+  wrongLetters.innerText = incorrects;
       typingInput.value = "";
 }
 

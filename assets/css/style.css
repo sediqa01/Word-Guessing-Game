@@ -36,7 +36,11 @@ body {
     margin: 25px 25px 35px;
 
 }
-
+.game-content .typing {
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
 .game-content .game-inputs {
     display: flex;
     flex-wrap: wrap;

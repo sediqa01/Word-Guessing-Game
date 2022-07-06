@@ -24,11 +24,14 @@ randomWords();
 function initGame(e) { //Geeting user pressed key
 
   let key = e.target.value;
-  console.log(key);
 
+  if (key.match(/^[A-Za-z]+$/)) {
 
-}
+      console.log(key);
+    }
 
-resetBtn.addEventListener("click", randomWords);
-typingInput.addEventListener("input", initGame);
-document.addEventListener("keydown", () => typingInput.focus());
+  }
+
+  resetBtn.addEventListener("click", randomWords);
+  typingInput.addEventListener("input", initGame);
+  document.addEventListener("keydown", () => typingInput.focus());

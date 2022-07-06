@@ -1,10 +1,11 @@
 const inputs = document.querySelector(".game-inputs"),
   resetBtn = document.querySelector(".btn"),
   hint = document.querySelector(".hint span"),
+  guessLeft = document.querySelector(".guess-left span"),
   wrongLetters = document.querySelector(".wrong span"),
   typingInput = document.querySelector(".typing");
 
-let word, corrects = [] , incorrects = [];
+let word, maxGuesses , corrects = [] , incorrects = [];
 
 function randomWords() {
 
@@ -12,9 +13,11 @@ function randomWords() {
   let objFirst = wordDetails[Math.floor(Math.random() * wordDetails.length)];
 
   word = objFirst.word; //getting word from random object
+  maxGuesses = 6;
   console.log(word);
 
   hint.innerHTML = objFirst.hint;
+  guessLeft.innerHTML = maxGuesses;
 
   let html = "";
   for (let i = 0; i < word.length; i++) {
@@ -46,11 +49,12 @@ function initGame(e) { //Geeting user pressed key
       }
     } 
     else {
-
+      maxGuesses--; //decrement by 1
       incorrects.push(`  ${key}`);
     }
+    guessLeft.innerHTML = maxGuesses;
+    wrongLetters.innerText = incorrects;
   }
-  wrongLetters.innerText = incorrects;
       typingInput.value = "";
 }
 

@@ -2,19 +2,67 @@ const wordDetails = [
 
     {
         word: "google",
-        hint: "search engin"
+        hint: "Search engin"
     },
     {
         word: "earth",
-        hint: "planet of our solar system  "
+        hint: "Planet of our solar system  "
+    },
+    {
+        word: "golang",
+        hint: "Programming language"
+    },
+    {
+        word: "coding",
+        hint: "Related to programming"
+    },
+    {
+        word: "matrix",
+        hint: "Science fiction movie"
+    },
+    {
+        word: "bugs",
+        hint: "Related to programming"
+    },
+    {
+        word: "avatar",
+        hint: "Epic science fiction film"
+    },
+    {
+        word: "gif",
+        hint: "A file format for image"
+    },
+    {
+        word: "mental",
+        hint: "Related to the mind"
+    },
+    {
+        word: "map",
+        hint: "Diagram represent of an area"
+    },
+    {
+        word: "island",
+        hint: "Land surrounded by water"
+    },
+    {
+        word: "hockey",
+        hint: "A famous outdoor game"
+    },
+    {
+        word: "chess",
+        hint: "Related to an indoor game"
+    },
+    {
+        word: "viber",
+        hint: "A social media app"
     },
     {
         word: "mysql",
-        hint: "relational database system"
+        hint: "Relational database system"
     },
     {
         word: "pizza",
-        hint: "italian food "
+        hint: "Italian Food "
     },
     {
         word: "piano",
@@ -25,27 +73,19 @@ const wordDetails = [
         hint: "Famous city of Canada "
     },
     {
-        word: "Cola ",
-        hint: "kind of drinks "
-    },
-    {
         word: "server",
-        hint: "related to computer and system "
-    },
-    {
-        word: "instagram",
-        hint: "popular social media "
+        hint: "Related to computer and system "
     },
     {
         word: "python",
-        hint: "programming language "
+        hint: "Programming language "
     },
     {
         word: "computer",
-        hint: "electronic device "
+        hint: "Electronic device "
     },
     {
         word: "github",
-        hint: "code hosting platfrom "
+        hint: "Code hosting platfrom "
     }
 ]

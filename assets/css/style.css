@@ -46,7 +46,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    pointer-events: none;
+     pointer-events: none;
 }
 
 .game-inputs input {
@@ -92,4 +92,31 @@ body {
 }
 .game-content .btn:hover{
     background: #4d1cc0;
+  }
+  /* Media query */
+
+  @media screen and (max-width: 460px) {
+    .game-area {
+      width: 100%;
+    }
+    .game-area h1{
+      font-size: 22px;
+      padding: 16px 20px;
+    }
+    .game-area .game-content{
+      margin: 25px 20px 35px;
+    }
+    .game-inputs input{
+      height: 51px;
+      width: 50px;
+      margin: 3px;
+      font-size: 22px;
+    }
+    .game-details p{
+      font-size: 17px;
+    }
+    .btn{
+      padding: 14px 0;
+      font-size: 16px;
+    }
   }

@@ -40,11 +40,13 @@ body {
     opacity: 0;
     z-index: -999;
     position: absolute;
+    pointer-events: none;
 }
 .game-content .game-inputs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    pointer-events: none;
 }
 
 .game-inputs input {
@@ -58,7 +60,7 @@ body {
     border-radius: 5px;
     text-transform: uppercase;
     border: 1px solid #ccc;
-    ;
+
 }
 
 .game-inputs input:first-child {
@@ -86,4 +88,8 @@ body {
     outline: none;
     background: #4d1cc0;
     border-radius: 5px;
+    transition: all 0.3s ease;
 }
+.game-content .btn:hover{
+    background: #4d1cc0;
+  }

@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 0 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/pexels-gradienta-7130472.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -23,6 +24,8 @@ body {
     width: 430px;
     background: #fdfdfd;
     border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 .game-area h1 {
@@ -36,7 +39,7 @@ body {
     margin: 25px 25px 35px;
 
 }
-.game-content .typing {
+ .typing {
     opacity: 0;
     z-index: -999;
     position: absolute;
@@ -46,7 +49,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-     pointer-events: none;
 }
 
 .game-inputs input {

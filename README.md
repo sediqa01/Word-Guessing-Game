@@ -10,7 +10,7 @@
 
 
 
-# Validator Testing
+## Validator Testing
 
 ### HTML
 - No errors were returned when passing through the official W3C validator.
@@ -24,7 +24,10 @@
 - No issues were found through JS Hint.
 ![JS report](assets/readMeImage/js.PNG)
 
+### Lighthouse
 
+The page achieved great performance.
+![report](assets/readMeImage/report.PNG)
 
 
 

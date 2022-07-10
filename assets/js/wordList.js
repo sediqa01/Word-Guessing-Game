@@ -69,10 +69,6 @@ const wordDetails = [
         hint: "Musical instruments "
     },
     {
-        word: "Toronto",
-        hint: "Famous city of Canada "
-    },
-    {
         word: "server",
         hint: "Related to computer and system "
     },

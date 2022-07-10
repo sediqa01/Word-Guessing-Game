@@ -13,13 +13,16 @@ Word guessing game is developed in purpose to improve memory and has a memory bo
 
    There are many feature available in this app that can help the player to guess faster and better like: 
 
-- **Hint *** The Hint option provides a clue to guess accodingly. 
-- **Remaining Guess *** The Remaining Guess show the chance of making wrong guess. 
+- **Hint** The Hint option provides a clue to guess accodingly. 
+- **Remaining Guess** The Remaining Guess show the chance of making wrong guess. 
 - **Worng letter** Worng letter option which assist player to avoid wrong guess.
 - **Reset Button** The Reset button , it restart the game.
-- **Answer *** Another features is that when the game is over the answer will appear on inputs squer.
+- **Answer** Another features is that when the game is over the answer will appear on inputs squer.
 
 ![image](assets/readMeImage/feature.PNG)
+
+### Features Left to Imlement
+When there is time ,I'd like to expand this Game to include player score and timing.
 
 
 # Testing

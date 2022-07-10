@@ -2,6 +2,17 @@
 
 
 
+
+# Libraries & Programs 
+
+    - Github, to store my repository
+    - Gitpod, to create my project files
+    - Google Fonts, for my font family 'Source Sans Pro'
+    - Favicon, for my project icons
+    - Am I Responsive?
+    - Dev Tools, to ensure the site looked good across different devices
+
+    
 # Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:

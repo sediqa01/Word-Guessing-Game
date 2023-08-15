@@ -50,7 +50,6 @@ i {
 
 .game-area .game-content {
     margin: 25px 35px;
-
 }
 
  .typing {
@@ -78,7 +77,6 @@ i {
     text-transform: uppercase;
     color: #6ca1d6;
     border: 1px solid #bdeaf7;
-
 }
 
 .game-inputs input:first-child {

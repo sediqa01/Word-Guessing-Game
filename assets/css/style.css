@@ -19,6 +19,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .game-area {
@@ -28,6 +30,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     padding: 10px;
+    margin-top: 10%;
+    flex: none;
 }
 
  h1 {
@@ -39,7 +43,7 @@ body {
     border-bottom: 1px solid #8fb1d3;
 }
 
- i {
+i {
   color: #6699ff;
   margin: 3px;
 }
@@ -48,12 +52,14 @@ body {
     margin: 25px 35px;
 
 }
+
  .typing {
     opacity: 0;
     z-index: -999;
     position: absolute;
     pointer-events: none;
 }
+
 .game-content .game-inputs {
     display: flex;
     flex-wrap: wrap;
@@ -107,11 +113,21 @@ body {
     background: #00ccff;
   }
 
-  /* Media query */
+  .footer {
+    color: #fff;
+    font-size: 0,66rem;
+    font-weight: 500px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+  }
 
+  /* Media query */
   @media screen and (max-width: 460px) {
     .game-area {
       width: 100%;
+      margin-top: 30%;
     }
     .game-area h1{
       font-size: 22px;
@@ -132,5 +148,63 @@ body {
     .btn{
       padding: 14px 0;
       font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    .game-area {
+      width: 80%;
+      margin-top: 50%;
+    }
+    .footer {
+      margin-bottom: 30px;
+    }
+    .game-area .game-content{
+      margin: 25px 20px 35px;
+    }
+
+  }
+
+  @media screen and (max-width: 390px) {
+    .game-area {
+      margin-top: 50%;
+    }
+    .game-inputs input{
+      height: 33px;
+      width: 33px;
+      margin: 3px;
+      font-size: 17px;
+    }
+    .game-details p{
+      font-size: 14px;
+    }
+    .btn{
+      padding: 8px 0;
+      font-size: 10px;
+    }
+    .game-area h1{
+      font-size: 20px;
+      padding: 14px 18px;
+    }
+    .game-area .game-content{
+      margin: 10px;
+    }
+    .footer {
+      font-size: 14px;
+      padding: 20px;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .game-area {
+      width: 80%;
+      margin-top: 40%;
+    }
+    .game-inputs input{
+      height: 40px;
+      width: 40px;
+      margin: 4px;
+      font-size: 18px;
     }
   }

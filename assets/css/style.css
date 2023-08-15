@@ -1,5 +1,6 @@
 /* Import Google fonts - Source Sans Pro */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 
 * {
     padding: 0;
@@ -14,7 +15,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     padding: 0 10px;
-    background-image: linear-gradient(to right, rgb(51, 102, 255), rgb(51, 204, 255));
+    background-image: linear-gradient(to right, #0059b3, rgb(51, 204, 255));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,16 +30,22 @@ body {
     padding: 10px;
 }
 
-.game-area h1 {
+ h1 {
+    font-family: 'Bagel Fat One', cursive;
+    color: #6ca1d6;
     font-size: 25px;
-    font-weight: 600;
     text-align: center;
     padding: 20px 25px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #8fb1d3;
+}
+
+ i {
+  color: #6699ff;
+  margin: 3px;
 }
 
 .game-area .game-content {
-    margin: 25px 25px 35px;
+    margin: 25px 35px;
 
 }
  .typing {
@@ -90,7 +97,7 @@ body {
     padding: 10px 0px;
     border: none;
     outline: none;
-    background: rgb(51, 102, 255);
+    background: #008ae6;
     border-radius: 5px;
     transition: all 0.3s ease;
     margin: 15px;

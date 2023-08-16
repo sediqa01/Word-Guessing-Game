@@ -21,6 +21,8 @@ There are many feature available in this app that can help the player to guess f
 - **Timer:**
 - **Answer:** Another features is that when the game is over the answer will appear on alert message.
 
+     ![Feature](assets/readMeImage/feature.jpg)
+
 
 ### _Features Left to Imlement_
 Non so far.

@@ -17,9 +17,25 @@ There are many feature available in this app that can help the player to guess f
 - **Remaining Guess:** The Remaining Guess show the chance of making wrong guess. 
 - **Worng letter:** Worng letter option which assist player to avoid wrong guess.
 - **Reset Button:** The Reset button , it restart the game.
-- **Player Score:** By each guess for correct letter, the user wins one score. It will reset when user reset the game.
-- **Timer:**
+- **Player Score:** The player score feature enhances the game by awarding points for correct word guesses. It introduces an element of competitiveness and skill, encouraging players to aim for higher scores. It will reset when user reset the game.
+- **Timer:** The game timing feature introduces a 60-second countdown to each word guess, enhancing excitement and challenge. Players must think quickly, adding an element of urgency and fostering focused decision-making. This dynamic gameplay creates engaging rounds with immediate feedback on remaining time, while also promoting adaptive strategies and streamlined play.
 - **Answer:** Another features is that when the game is over the answer will appear on alert message.
+
+**_Timer in different Cases:_**
+
+1. Timer will stop when users found the word
+
+![Timer -  found the word](assets/readMeImage/timerFoundWord.jpg)
+
+2. Timer will stop when user run out of "Max Guesses"
+
+![Timer - Max Guesses](assets/readMeImage/timer.jpg)
+
+3. When uer run out of 60 sec,
+
+![Timer - Max Guesses](assets/readMeImage/timer.jpg)
+
+
 
 **Note:** If the user types a wrong letter several times, this repetition does not reduce the number of "Max Guess" that the user has.  And the worng typed letter is shown only once in the list of wrong letters list..
 
@@ -58,7 +74,10 @@ I'm not seeing this issue in any other browser that I've tested - IE, Chrome, Op
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 ### _Unfixed Bugs_
-No unfixed bugs have been found.
+
+When I was testing the timer, I noticed that when user go to another tab from the game page in the browser or leave the game page for any reason, the timer refreshes and starts over until the timer stops when 60 seconds are up or user click rest game button.  Although this bug does not broken the game work, it is poor in terms of user experience. I could not solve this bug, so I am documenting it here.
+
+![Timer](assets/readMeImage/timerBug.jpg)
 
 
 ## Validator Testing
@@ -81,7 +100,7 @@ No unfixed bugs have been found.
 ### _Lighthouse_
 The page achieved great performance.
 
-<!-- new report for lighthouse -->
+![Lighthouse Report](assets/readMeImage/reportLighthouse.jpg)
 
 
 

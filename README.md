@@ -17,11 +17,13 @@ There are many feature available in this app that can help the player to guess f
 - **Remaining Guess:** The Remaining Guess show the chance of making wrong guess. 
 - **Worng letter:** Worng letter option which assist player to avoid wrong guess.
 - **Reset Button:** The Reset button , it restart the game.
-- **Player Score:** By each guess for correct letter, the user wins one score.
+- **Player Score:** By each guess for correct letter, the user wins one score. It will reset when user reset the game.
 - **Timer:**
 - **Answer:** Another features is that when the game is over the answer will appear on alert message.
 
-     ![Feature](assets/readMeImage/feature.jpg)
+**Note:** If the user types a wrong letter several times, this repetition does not reduce the number of "Max Guess" that the user has.  And the worng typed letter is shown only once in the list of wrong letters list..
+
+   ![Feature](assets/readMeImage/feature.jpg)
 
 
 ### _Features Left to Imlement_
@@ -63,19 +65,23 @@ No unfixed bugs have been found.
 
 ### _HTML_
 - No errors were returned when passing through the official W3C validator.
-![html report](assets/readMeImage/html.png)
+
+<!--html validator report   -->
 
 ### _CSS_
 - No errors were found when passing through the official (Jigsaw) validator.
-![css report](assets/readMeImage/css.PNG)
+
+<!-- css validator report -->
 
 ### _JS_
 - No issues were found through JS Hint.
-![JS report](assets/readMeImage/js.PNG)
+
+<!-- new js hint report -->
 
 ### _Lighthouse_
 The page achieved great performance.
-![report](assets/readMeImage/report.PNG)
+
+<!-- new report for lighthouse -->
 
 
 

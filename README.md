@@ -90,12 +90,12 @@ When I was testing the timer, I noticed that when user go to another tab from th
 ### _CSS_
 - No errors were found when passing through the official (Jigsaw) validator.
 
-<!-- css validator report -->
+![CSS Code Validator](assets/readMeImage/timerBug.jpg)
 
 ### _JS_
 - No issues were found through JS Hint.
 
-<!-- new js hint report -->
+![JS Code Validator](assets/readMeImage/timerBug.jpg)
 
 ### _Lighthouse_
 The page achieved great performance.

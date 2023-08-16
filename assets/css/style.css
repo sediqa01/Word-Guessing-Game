@@ -1,12 +1,11 @@
-/* Import Google fonts - Source Sans Pro */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+/* Import Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Philosopher&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Philosopher', sans-serif;
 }
 
 body {
@@ -30,7 +29,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     padding: 10px;
-    margin-top: 10%;
+    margin-top: 8%;
     flex: none;
 }
 
@@ -113,8 +112,7 @@ i {
 
   .footer {
     color: #fff;
-    font-size: 0,66rem;
-    font-weight: 500px;
+    font-size: 18px;
     margin-top: auto;
     margin-bottom: 10px;
     padding: 10px;
@@ -152,7 +150,7 @@ i {
   @media screen and (max-width: 912px) {
     .game-area {
       width: 80%;
-      margin-top: 50%;
+      margin-top: 30%;
     }
     .footer {
       margin-bottom: 30px;

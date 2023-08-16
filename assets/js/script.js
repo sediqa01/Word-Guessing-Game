@@ -57,7 +57,6 @@ function initGame(e) {
   }else {
       maxGuesses--;
       incorrects.push(`  ${key}`);
-      playerScore -= 1; // Deduct 1 point for a wrong guess
       updateScore();    // Update the score display
     }
   guessLeft.innerHTML = maxGuesses;
@@ -68,7 +67,7 @@ function initGame(e) {
 
 // Check game status
 setTimeout(() => {
-  // Player wins
+      // Player wins
     if (corrects.length === word.length) {
       alert(`Congrast!! You found the word:  ${word.toUpperCase()}`);
       randomWords(); 
@@ -81,15 +80,14 @@ setTimeout(() => {
 
 // Handle game over
 function handleGameOver() {
-  alert("Game Over!!");
-  for (let i = 0; i < word.length; i++) {
-    inputs.querySelectorAll("input")[i].value = word[i];
-  }
+  alert(`Game Over!! the word was:  ${word.toUpperCase()}`);
   randomWords();
   updateScore();   // Update the score display
 }
+
 // Event listeners
 resetBtn.addEventListener("click", () => {
+  randomWords();
   playerScore = 0; // Reset player score
   updateScore();   // Update the score display
 });
@@ -99,5 +97,5 @@ inputs.addEventListener("click", () => typingInput.focus());
 document.addEventListener("keydown", () => typingInput.focus());
 
 // Initialize the game
-randomWords();
+
 updateScore();

@@ -53,7 +53,7 @@ const wordDetails = [
         hint: "Related to an indoor game"
     },
     {
-        word: "viber",
+        word: "instagram",
         hint: "A social media app"
     },
     {

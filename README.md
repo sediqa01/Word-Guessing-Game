@@ -93,6 +93,7 @@ The page achieved great performance.
 - **Favicon -** for my project icons
 - **AmIResponsive? -** To check site responsivness
 - **Dev Tools -** to ensure the site looked good across different devices
+- **Font Awsome Icon -** provied game icons.
 
 
 ## Deployment
@@ -109,9 +110,6 @@ For JavaScript issues I encountered these sites have been used for reference:
 
 - For general information [W3 Schools](https://www.w3schools.com/) and [Developer Mozilla](https://developer.mozilla.org/)
 - I used [CodeNepal](https://www.codingnepalweb.com/) site as main guide and followed CodeNepal YouTube step by step.
-- For guidance I looked at these tutorials on Youtube
-  - https://www.youtube.com/watch?v=Dgp0tEKJj-g
-  - https://www.youtube.com/watch?v=N5T1lA2jsmM
 - For Media Query I used [W3 Schools](https://www.w3schools.com/)
 
 ## Media 

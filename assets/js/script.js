@@ -13,6 +13,7 @@ let word, maxGuesses, corrects = [],
   timeRemaining = 60, // Initial game time
   playerScore = 0; // Initial player score
   
+  let timerInterval;
 function randomWords() {
   //getting random object from wordList
   let objFirst = wordDetails[Math.floor(Math.random() * wordDetails.length)];
@@ -36,8 +37,12 @@ function randomWords() {
 randomWords();
 
  // Start the game timer
- function startTimer() {
-  const timerInterval = setInterval(() => {
+function startTimer() {
+  clearInterval(timerInterval); // Clear any existing timer
+  timerDisplay.textContent = '60'; // Set initial timer display to 60 seconds
+  timeRemaining = 60; // Reset time remaining
+
+  timerInterval = setInterval(() => {
     if (timeRemaining <= 0) {
       clearInterval(timerInterval);
       handleGameOver();
@@ -47,7 +52,6 @@ randomWords();
     }
   }, 1000);
 }
-
 
 // Update the player's score display
 function updateScore() {
@@ -89,7 +93,7 @@ setTimeout(() => {
       // Player loses
       handleGameOver();
     }
-  });
+  }, 0);
 }
 
 // Handle game over
@@ -102,11 +106,10 @@ function handleGameOver() {
   timerDisplay.textContent = timeRemaining; // Reset timer display
 }
 
-
 // Event listeners
 resetBtn.addEventListener("click", () => {
+  clearInterval(timerInterval); // Clear existing timer interval
   randomWords();
-  startTimer();
   playerScore = 0; // Reset player score
   updateScore();   // Update the score display
 });
@@ -118,3 +121,4 @@ document.addEventListener("keydown", () => typingInput.focus());
 // Initialize the game
 updateScore();
 randomWords();
+startTimer();

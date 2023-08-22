@@ -16,10 +16,17 @@ There are many feature available in this app that can help the player to guess f
 - **Hint:** The Hint option provides a clue to guess accodingly. 
 - **Remaining Guess:** The Remaining Guess show the chance of making wrong guess. 
 - **Worng letter:** Worng letter option which assist player to avoid wrong guess.
-- **Reset Button:** The Reset button , it restart the game.
+- **Reset Game Button:** The Reset button , it restart the game.
+- **Start Game Button:** The "Start Game" button feature offers users the ability to initiate the word guessing game at their discretion. Upon clicking the button, the game timer begins counting down from the specified duration, and the game's hint becomes visible. Additionally, the button becomes visually disabled, signaling to users that the game has commenced and preventing repeated clicks until the current round concludes. This intuitive feature enhances user engagement and control over the game experience.
 - **Player Score:** The player score feature enhances the game by awarding points for correct word guesses. It introduces an element of competitiveness and skill, encouraging players to aim for higher scores. It will reset when user reset the game.
-- **Timer:** The game timing feature introduces a 60-second countdown to each word guess, enhancing excitement and challenge. Players must think quickly, adding an element of urgency and fostering focused decision-making. This dynamic gameplay creates engaging rounds with immediate feedback on remaining time, while also promoting adaptive strategies and streamlined play.
+- **Timer:** The game timing feature introduces a 30-second countdown to each word guess, enhancing excitement and challenge. Players must think quickly, adding an element of urgency and fostering focused decision-making. This dynamic gameplay creates engaging rounds with immediate feedback on remaining time, while also promoting adaptive strategies and streamlined play.
 - **Answer:** Another features is that when the game is over the answer will appear on alert message.
+
+![Feature](assets/readMeImage/feature.jpg)
+
+
+![Feature](assets/readMeImage/startGame.jpg)
+
 
 **_Timer in different Cases:_**
 
@@ -31,7 +38,7 @@ There are many feature available in this app that can help the player to guess f
 
 ![Timer - Max Guesses](assets/readMeImage/timer.jpg)
 
-3. When uer run out of 60 sec,
+3. When uer run out of 30 sec,
 
 ![Timer - Max Guesses](assets/readMeImage/timer.jpg)
 
@@ -39,7 +46,7 @@ There are many feature available in this app that can help the player to guess f
 
 **Note:** If the user types a wrong letter several times, this repetition does not reduce the number of "Max Guess" that the user has.  And the worng typed letter is shown only once in the list of wrong letters list..
 
-   ![Feature](assets/readMeImage/feature.jpg)
+   
 
 
 ### _Features Left to Imlement_
@@ -85,7 +92,8 @@ When I was testing the timer, I noticed that when user go to another tab from th
 ### _HTML_
 - No errors were returned when passing through the official W3C validator.
 
-<!--html validator report   -->
+![CSS Code Validator](assets/readMeImage/html.jpg)
+
 
 ### _CSS_
 - No errors were found when passing through the official (Jigsaw) validator.
@@ -102,6 +110,7 @@ The page achieved great performance.
 
 ![Lighthouse Report](assets/readMeImage/reportLighthouse.jpg)
 
+Note: I added a semantic structure in the code using LMS, but when I was validating the html code, it got an error in section tags and suggested to use div tag instead of section.
 
 
 ## Libraries & Programs 
@@ -129,6 +138,7 @@ For JavaScript issues I encountered these sites have been used for reference:
 
 - For general information [W3 Schools](https://www.w3schools.com/) and [Developer Mozilla](https://developer.mozilla.org/)
 - I used [CodeNepal](https://www.codingnepalweb.com/) site as main guide and followed CodeNepal YouTube step by step.
+- I used this sit to add disabled stayle for start btn disable mode [Smart Devpreneur](https://smartdevpreneur.com/easily-disable-a-button-with-javascript-or-css-3-examples/)
 - For Media Query I used [W3 Schools](https://www.w3schools.com/)
 
 ## Media 

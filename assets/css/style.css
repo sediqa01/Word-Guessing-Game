@@ -108,7 +108,8 @@ i {
 
 .start-btn.disabled {
   background-color: #deefff;
-  cursor: not-allowed;
+  opacity: 0.65;
+  cursor: default;
 }
 
 .start-btn.disabled:hover {

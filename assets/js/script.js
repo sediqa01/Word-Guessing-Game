@@ -1,20 +1,27 @@
 // Selecting DOM elements
 const inputs = document.querySelector(".game-inputs"),
-  resetBtn = document.querySelector(".btn"),
+  resetBtn = document.querySelector(".reset-btn"),
   hint = document.querySelector(".hint span"),
   guessLeft = document.querySelector(".guess-left span"),
   wrongLetters = document.querySelector(".wrong span"),
   typingInput = document.querySelector(".typing"),
   timerDisplay = document.querySelector(".timer span"),
-  scoreDisplay = document.querySelector(".score span");
+  scoreDisplay = document.querySelector(".score span"),
+  startBtn = document.querySelector(".start-btn");
 
 let word, maxGuesses, corrects = [],
-  incorrects = [],
-  timeRemaining = 60, // Initial game time
-  playerScore = 0; // Initial player score
+incorrects = [],
+timeRemaining = 30, // Initial game time
+playerScore = 0,
+timerInterval,
+gameStarted = false; // Keep track if the game has started or not
   
-  let timerInterval;
 function randomWords() {
+   // Stop and reset the timer before starting it again
+   clearInterval(timerInterval);
+   timeRemaining = 30;
+   timerDisplay.textContent = timeRemaining;
+
   //getting random object from wordList
   let objFirst = wordDetails[Math.floor(Math.random() * wordDetails.length)];
 
@@ -34,13 +41,12 @@ function randomWords() {
   inputs.innerHTML = html;
   startTimer();
 }
-randomWords();
+// randomWords();
 
- // Start the game timer
+// Start the game timer
 function startTimer() {
-  clearInterval(timerInterval); // Clear any existing timer
-  timerDisplay.textContent = '60'; // Set initial timer display to 60 seconds
-  timeRemaining = 60; // Reset time remaining
+  clearInterval(timerInterval);
+  timerDisplay.textContent = timeRemaining;
 
   timerInterval = setInterval(() => {
     if (timeRemaining <= 0) {
@@ -52,6 +58,18 @@ function startTimer() {
     }
   }, 1000);
 }
+
+// Event listener for the "Start Game" button
+startBtn.addEventListener("click", () => {
+  if (!gameStarted) {
+    gameStarted = true;
+    startBtn.disabled = true; // Disable the button after starting the game
+    hint.style.display = "inline"; 
+    randomWords();
+    startTimer();
+  }
+});
+
 
 // Update the player's score display
 function updateScore() {
@@ -102,7 +120,7 @@ function handleGameOver() {
   randomWords();
   startTimer();
   updateScore(); // Update the score display
-  timeRemaining = 60; // Reset time remaining
+  timeRemaining = 30; // Reset time remaining
   timerDisplay.textContent = timeRemaining; // Reset timer display
 }
 
@@ -120,5 +138,3 @@ document.addEventListener("keydown", () => typingInput.focus());
 
 // Initialize the game
 updateScore();
-randomWords();
-startTimer();

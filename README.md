@@ -4,7 +4,7 @@ Word guessing game is for everyone who are curios and quick performer. they can 
 
 Word guessing game is developed in purpose to improve memory and has a memory boosting fuction.
 
-<!-- AmIResponsive Image-->
+![AmIResponsive](assets/readMeImage/responsive.jpg)
 
 
 ## Features

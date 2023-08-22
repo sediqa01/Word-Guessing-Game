@@ -115,22 +115,6 @@ setTimeout(() => {
   }, 0);
 }
 
-// Event listener for the text input field
-typingInput.addEventListener("input", (e) => {
-  const typedLetter = e.target.value;
-
-  // Update the corresponding input field with the typed letter
-  const inputFields = inputs.querySelectorAll("input");
-  for (let i = 0; i < inputFields.length; i++) {
-    if (inputFields[i].value === "") {
-      inputFields[i].value = typedLetter;
-      break;
-    }
-  }
-
-  initGame(e); // Call the initGame function with the typed letter
-});
-
 // Handle game over
 function handleGameOver() {
   alert(`Game Over!! the word was:  ${word.toUpperCase()}`);

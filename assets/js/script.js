@@ -64,6 +64,7 @@ startBtn.addEventListener("click", () => {
   if (!gameStarted) {
     gameStarted = true;
     startBtn.disabled = true; // Disable the button after starting the game
+    startBtn.classList.add("disabled"); // Add the disabled class
     hint.style.display = "inline"; 
     randomWords();
     startTimer();

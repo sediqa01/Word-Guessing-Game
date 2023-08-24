@@ -156,7 +156,7 @@ For JavaScript issues I encountered these sites have been used for reference:
 - For general information [W3 Schools](https://www.w3schools.com/) and [Developer Mozilla](https://developer.mozilla.org/)
 - I used [CodeNepal](https://www.codingnepalweb.com/) site as main guide and followed CodeNepal YouTube step by step.
 - I used this sit to add disabled stayle for start btn disable mode [Smart Devpreneur](https://smartdevpreneur.com/easily-disable-a-button-with-javascript-or-css-3-examples/)
-- For Media Query I used [W3 Schools](https://www.w3schools.com/)
+- For Media Query, and color picker I used [W3 Schools](https://www.w3schools.com/)
 
 ## Media 
 - Image for favicon taken from [iconfinder](https://www.iconfinder.com/search?q=word%20game)

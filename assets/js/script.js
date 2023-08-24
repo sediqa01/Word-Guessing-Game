@@ -41,7 +41,6 @@ function randomWords() {
   inputs.innerHTML = html;
   startTimer();
 }
-// randomWords();
 
 // Start the game timer
 function startTimer() {

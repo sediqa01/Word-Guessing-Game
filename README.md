@@ -47,8 +47,6 @@ There are many feature available in this app that can help the player to guess f
 **Note:** If the user types a wrong letter several times, this repetition does not reduce the number of "Max Guess" that the user has.  And the worng typed letter is shown only once in the list of wrong letters list..
 
    
-
-
 ### _Features Left to Imlement_
 Non so far.
 
@@ -82,9 +80,28 @@ I'm not seeing this issue in any other browser that I've tested - IE, Chrome, Op
 
 ### _Unfixed Bugs_
 
-When I was testing the timer, I noticed that when user go to another tab from the game page in the browser or leave the game page for any reason, the timer refreshes and starts over until the timer stops when 60 seconds are up or user click rest game button.  Although this bug does not broken the game work, it is poor in terms of user experience. I could not solve this bug, so I am documenting it here.
+- When I was testing the timer, I noticed that when user go to another tab from the game page in the browser when the game is over and timer round is 0,the timer refreshes and starts over until the timer stops when 30 seconds are up or user click rest game button.  Although this bug does not broken the game work, it is poor in terms of user experience. I could not solve this bug, so I am documenting it here.
 
 ![Timer](assets/readMeImage/timerBug.jpg)
+
+- While testing the game on different devices, I realized that the typed letters were not displaying in the input fields on mobile devices. To address this issue, I implemented an event listener for the text input field that ensures the typed letters are correctly displayed in the input fields on mobile devices. However, this solution inadvertently led to a performance issue, as the typed letters were no longer displaying on desktop devices as well. so I documented as unfixed bug.
+
+![typed letters](assets/readMeImage/eventLisenter.jpg)
+
+
+## What's New? 😃
+In this section, you can explore the exciting updates to the project.
+
+### _Font Awesome Icons_ 
+To enhance the user interface, Font Awesome icons have been incorporated, adding visual appeal and usability.
+### _Refreshing Colors_ 
+The background image has been replaced with a pleasing light blue background, improving site loading speed. The use of the `linear-gradient` property brings a gradient effect reminiscent of the previous background image. This delightful color has also been extended to the buttons for a harmonious look.
+### _Start Game Button_ 
+Introducing the "Start Game" button! Users can now kick off their word-guessing adventure with a simple click, triggering the game timer and engaging gameplay.
+### _Game Timing_
+The game timing feature adds an element of challenge and excitement. Players are given a fixed time of 30 seconds for each word guess, enhancing the gameplay experience.
+### _Player Score_
+The player score feature has been implemented to track and display the user's progress. Correct guesses lead to an increment in score, while wrong guesses are handled thoughtfully to maintain a fair and enjoyable experience.
 
 
 ## Validator Testing
